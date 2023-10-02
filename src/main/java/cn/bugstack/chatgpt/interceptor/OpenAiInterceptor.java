@@ -37,7 +37,7 @@ public class OpenAiInterceptor implements Interceptor {
     private Request auth(String apiKey, Request original) {
         // 设置Token信息；如果没有此类限制，是不需要设置的。
         HttpUrl url = original.url().newBuilder()
-                .addQueryParameter("token", authToken)
+//                .addQueryParameter("token", authToken)
                 .build();
 
         // 创建请求

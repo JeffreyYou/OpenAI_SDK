@@ -15,21 +15,24 @@ import retrofit2.http.POST;
  * @Copyright 公众号：bugstack虫洞栈 | 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  */
 public interface IOpenAiApi {
+    String v1_completions = "v1/completions";
 
     /**
      * 文本问答
      * @param qaCompletionRequest 请求信息
      * @return                    返回结果
      */
-    @POST("v1/completions")
+    @POST(v1_completions)
     Single<QACompletionResponse> completions(@Body QACompletionRequest qaCompletionRequest);
+
+    String v1_chat_completions = "v1/chat/completions";
 
     /**
      * 默认 GPT-3.5 问答模型
      * @param chatCompletionRequest 请求信息
      * @return                      返回结果
      */
-    @POST("v1/chat/completions")
+    @POST(v1_chat_completions)
     Single<ChatCompletionResponse> completions(@Body ChatCompletionRequest chatCompletionRequest);
 
 }
