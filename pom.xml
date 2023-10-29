@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.bugstack.chatgpt</groupId>
+    <groupId>com.jeffrey.chatgpt</groupId>
     <artifactId>chatgpt-sdk-java</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -94,6 +94,7 @@
     <build>
         <finalName>chatgpt-sdk-java</finalName>
         <plugins>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
