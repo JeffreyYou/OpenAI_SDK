@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>chatgpt-sdk-java</name>
-    <description>OpenAI Java SDK, ChatGPT Java SDK.</description>
+    <description>OpenAI Java SDK, ChatGPT Java SDK</description>
 
     <properties>
         <java.version>1.8</java.version>
